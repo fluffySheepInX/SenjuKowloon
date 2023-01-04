@@ -1,0 +1,140 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9c76a3f5-d9d4-45ce-99d6-c4ce7a262d8d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>千住九龍</Name>
+    <RootNamespace>千住九龍</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="base.py" />
+    <Compile Include="bottle.py" />
+    <Compile Include="NewFolder2\NewFolder1\const\cookie.py" />
+    <Compile Include="NewFolder2\NewFolder1\const\debug.py" />
+    <Compile Include="NewFolder2\NewFolder1\const\htmlBattle.py" />
+    <Compile Include="NewFolder2\NewFolder1\const\quest.py" />
+    <Compile Include="NewFolder2\NewFolder1\const\sql.py" />
+    <Compile Include="NewFolder2\NewFolder1\const\system.py" />
+    <Compile Include="NewFolder2\NewFolder1\const\systemCommand.py" />
+    <Compile Include="NewFolder2\NewFolder1\const\ui.py" />
+    <Compile Include="NewFolder2\NewFolder1\control\adminFunction.py" />
+    <Compile Include="NewFolder2\NewFolder1\control\normalFunction.py" />
+    <Compile Include="NewFolder2\NewFolder1\control\uiFunction.py" />
+    <Compile Include="NewFolder2\NewFolder1\model\executeSql.py" />
+    <Compile Include="NewFolder2\routesAdmin.py" />
+    <Compile Include="NewFolder2\routesTopMain.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Front.html" />
+    <Content Include="NewFolder2\NewFolder1\battleLog\20203241611.html" />
+    <Content Include="NewFolder2\NewFolder1\battleLog\20203241711.html" />
+    <Content Include="NewFolder2\NewFolder1\battleLog\202044192101.html" />
+    <Content Include="NewFolder2\NewFolder1\static\content\test.css" />
+    <Content Include="NewFolder2\NewFolder1\static\element\background1.jpg" />
+    <Content Include="NewFolder2\NewFolder1\static\element\background2.jpg" />
+    <Content Include="NewFolder2\NewFolder1\static\element\background3.jpg" />
+    <Content Include="NewFolder2\NewFolder1\static\element\map1.png" />
+    <Content Include="NewFolder2\NewFolder1\static\element\map2.png" />
+    <Content Include="NewFolder2\NewFolder1\static\front\DSC_0066.jpg" />
+    <Content Include="NewFolder2\NewFolder1\static\quest\quest001.jpg" />
+    <Content Include="NewFolder2\NewFolder1\static\quest\quest002.jpg" />
+    <Content Include="requirements.txt" />
+    <Content Include="views\admin.tpl" />
+    <Content Include="views\changeGroup.tpl" />
+    <Content Include="views\commandAttack.tpl" />
+    <Content Include="views\commandCallSoldier.tpl" />
+    <Content Include="views\commandGuard.tpl" />
+    <Content Include="views\commandMove.tpl" />
+    <Content Include="views\config.tpl" />
+    <Content Include="views\historyAction.tpl" />
+    <Content Include="views\layout.tpl" />
+    <Content Include="views\layout2.tpl" />
+    <Content Include="views\listSoldier.tpl" />
+    <Content Include="views\listUser.tpl" />
+    <Content Include="views\main.tpl" />
+    <Content Include="views\manual.tpl" />
+    <Content Include="views\meetingRoom.tpl" />
+    <Content Include="views\notice.tpl" />
+    <Content Include="views\questCommon.tpl" />
+    <Content Include="views\questCommonDetail.tpl" />
+    <Content Include="views\register.tpl" />
+    <Content Include="views\story.tpl" />
+    <Content Include="views\top.tpl" />
+    <Content Include="views\weapon.tpl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder2\" />
+    <Folder Include="NewFolder2\NewFolder1\" />
+    <Folder Include="NewFolder2\NewFolder1\battleLog\" />
+    <Folder Include="NewFolder2\NewFolder1\const\" />
+    <Folder Include="NewFolder2\NewFolder1\control\" />
+    <Folder Include="NewFolder2\NewFolder1\model\" />
+    <Folder Include="NewFolder2\NewFolder1\static\" />
+    <Folder Include="NewFolder2\NewFolder1\static\content\" />
+    <Folder Include="NewFolder2\NewFolder1\static\element\" />
+    <Folder Include="NewFolder2\NewFolder1\static\front\" />
+    <Folder Include="NewFolder2\NewFolder1\static\quest\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
